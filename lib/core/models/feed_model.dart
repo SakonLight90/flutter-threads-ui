@@ -3,7 +3,8 @@ class FeedModel {
   final String profile;
   final String timeAgo;
   final bool isVerified;
-  final String contentText;
+  String? contentText;
+  String? contentPhoto;
   String? replies;
   String? likes;
   final bool isLiked;
@@ -16,7 +17,8 @@ class FeedModel {
     required this.profile,
     required this.timeAgo,
     this.isVerified = false,
-    required this.contentText,
+    this.contentText,
+    this.contentPhoto,
     this.replies,
     this.likes,
     this.isLiked = false,

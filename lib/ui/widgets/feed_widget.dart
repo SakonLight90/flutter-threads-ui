@@ -60,13 +60,20 @@ class FeedWidget extends StatelessWidget {
                         ],
                       ),
                       5.height,
-                      Text(
-                        data.contentText,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
+                      if (data.contentText != null)
+                        Text(
+                          data.contentText!,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
-                      ),
+                      if (data.contentPhoto != null) 8.height,
+                      if (data.contentPhoto != null)
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(data.contentPhoto!),
+                        ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 20),
                         child: Row(

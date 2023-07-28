@@ -23,7 +23,7 @@ List<FeedModel> feeds() {
       isVerified: true,
       profile: Assets.images.profileAgis.path,
       contentText:
-          "Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes.",
+          "Here’s this is figma's implementation of UI threads using Flutter and BLoC state management 🚀",
       timeAgo: "1h",
       likes: "6K",
       replies: "231",
@@ -42,6 +42,7 @@ List<FeedModel> feeds() {
       timeAgo: "26m",
       likes: "54",
       replies: "2",
+      contentPhoto: Assets.images.postImage.path,
       userLikes: [
         UserLikes(photo: Assets.images.avatar3.path),
         UserLikes(photo: Assets.images.avatar1.path),
@@ -52,7 +53,7 @@ List<FeedModel> feeds() {
       isVerified: false,
       profile: Assets.images.avatar6.path,
       contentText:
-          "Let's talk about the incredible power of perseverance and how it can change your life. 🚀 ",
+          "Let's talk about the incredible power of perseverance and how it can change your life. ",
       timeAgo: "2h",
       likes: "135",
       replies: "12",
