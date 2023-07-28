@@ -101,15 +101,67 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/avatar-1.png
+  AssetGenImage get avatar1 =>
+      const AssetGenImage('assets/images/avatar-1.png');
+
+  /// File path: assets/images/avatar-2.png
+  AssetGenImage get avatar2 =>
+      const AssetGenImage('assets/images/avatar-2.png');
+
+  /// File path: assets/images/avatar-3.png
+  AssetGenImage get avatar3 =>
+      const AssetGenImage('assets/images/avatar-3.png');
+
+  /// File path: assets/images/avatar-4.png
+  AssetGenImage get avatar4 =>
+      const AssetGenImage('assets/images/avatar-4.png');
+
+  /// File path: assets/images/avatar-5.png
+  AssetGenImage get avatar5 =>
+      const AssetGenImage('assets/images/avatar-5.png');
+
+  /// File path: assets/images/avatar-6.png
+  AssetGenImage get avatar6 =>
+      const AssetGenImage('assets/images/avatar-6.png');
+
   /// File path: assets/images/instagram.png
   AssetGenImage get instagram =>
       const AssetGenImage('assets/images/instagram.png');
 
+  /// File path: assets/images/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
   /// File path: assets/images/pattern.png
   AssetGenImage get pattern => const AssetGenImage('assets/images/pattern.png');
 
+  /// File path: assets/images/post-image.png
+  AssetGenImage get postImage =>
+      const AssetGenImage('assets/images/post-image.png');
+
+  /// File path: assets/images/profile-agis.jpeg
+  AssetGenImage get profileAgis =>
+      const AssetGenImage('assets/images/profile-agis.jpeg');
+
+  /// File path: assets/images/profile-pic.png
+  AssetGenImage get profilePic =>
+      const AssetGenImage('assets/images/profile-pic.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [instagram, pattern];
+  List<AssetGenImage> get values => [
+        avatar1,
+        avatar2,
+        avatar3,
+        avatar4,
+        avatar5,
+        avatar6,
+        instagram,
+        logo,
+        pattern,
+        postImage,
+        profileAgis,
+        profilePic
+      ];
 }
 
 class Assets {

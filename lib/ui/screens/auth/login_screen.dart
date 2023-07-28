@@ -31,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     InkWell(
-                      onTap: () => context.goNamed(Routes.import),
+                      onTap: () => context.goNamed(Routes.home),
                       child: Container(
                         decoration: const BoxDecoration(
                           color: Colors.white,

@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 export 'package:go_router/go_router.dart';
 import 'package:threads/ui/screens/auth/login_screen.dart';
+import 'package:threads/ui/screens/home/home_screen.dart';
 import 'package:threads/ui/screens/user/import_screen.dart';
 part 'route_name.dart';
 
@@ -21,10 +22,10 @@ final router = GoRouter(
         ),
       ],
     ),
-    // GoRoute(
-    //   path: '/login',
-    //   name: Routes.login,
-    //   builder: (context, state) => LoginScreen(),
-    // )
+    GoRoute(
+      path: '/home',
+      name: Routes.home,
+      builder: (context, state) => const HomeScreen(),
+    )
   ],
 );

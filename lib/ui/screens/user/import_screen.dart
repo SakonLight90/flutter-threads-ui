@@ -14,7 +14,7 @@ class ImportScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Profile',
                 style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
               ),
