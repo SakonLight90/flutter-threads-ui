@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:threads/gen/assets.gen.dart';
 import 'package:threads/ui/screens/home/feed_tab.dart';
+import 'package:threads/ui/screens/home/search_tab.dart';
 import 'package:threads/ui/utils/utils.dart';
 
 // ignore: must_be_immutable
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           physics: NeverScrollableScrollPhysics(),
-          children: [FeedTab(), FeedTab(), FeedTab(), FeedTab(), FeedTab()],
+          children: [FeedTab(), SearchTab(), FeedTab(), FeedTab(), FeedTab()],
         ),
       ),
     );

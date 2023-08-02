@@ -72,7 +72,7 @@ class LoginScreen extends StatelessWidget {
                                 Row(
                                   children: [
                                     const Text(
-                                      'agisrh',
+                                      'agis',
                                       style: TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.w600,

@@ -79,3 +79,74 @@ List<FeedModel> feeds() {
     )
   ];
 }
+
+List<UserModel> findUsers() {
+  return [
+    UserModel(
+      name: "Mark Zuckerberg",
+      profile: Assets.images.profilePic.path,
+      username: "zuck",
+      isVerified: true,
+      followers: "143.2K",
+    ),
+    UserModel(
+      name: "Agis R Herdiana",
+      profile: Assets.images.profileAgis.path,
+      username: "agis",
+      isVerified: true,
+      followers: "17.3K",
+      friendsFollow: [
+        FriendFollow(photo: Assets.images.avatar4.path),
+        FriendFollow(photo: Assets.images.avatar6.path),
+      ],
+    ),
+    UserModel(
+      name: "Jacob Jones",
+      profile: Assets.images.avatar1.path,
+      username: "jones177_ jacob",
+      isVerified: true,
+      followers: "2.1K",
+    ),
+    UserModel(
+      name: "Kristin Watson",
+      profile: Assets.images.avatar2.path,
+      username: "iamkristin_w",
+      followers: "432",
+    ),
+    UserModel(
+      name: "Cody Fisher",
+      profile: Assets.images.avatar3.path,
+      username: "cody-fisher@16",
+      isVerified: true,
+      followers: "1.1K",
+    ),
+    UserModel(
+        name: "Albert Flores",
+        profile: Assets.images.avatar4.path,
+        username: "the_alfroresd",
+        followers: "49"),
+    UserModel(
+        name: "Ralph Edwards",
+        profile: Assets.images.avatar5.path,
+        username: "ed.theguy",
+        followers: "139"),
+    UserModel(
+      name: "Devon Lane",
+      profile: Assets.images.avatar6.path,
+      username: "theguy_withpen",
+      followers: "14",
+    ),
+    UserModel(
+      name: "Jerome Bell",
+      profile: Assets.images.avatar7.path,
+      username: "jerome_bell",
+      followers: "654",
+    ),
+    UserModel(
+      name: "Robert Fox",
+      profile: Assets.images.avatar8.path,
+      username: "robert_fox",
+      followers: "155",
+    ),
+  ];
+}

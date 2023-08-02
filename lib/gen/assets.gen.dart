@@ -125,6 +125,14 @@ class $AssetsImagesGen {
   AssetGenImage get avatar6 =>
       const AssetGenImage('assets/images/avatar-6.png');
 
+  /// File path: assets/images/avatar-7.png
+  AssetGenImage get avatar7 =>
+      const AssetGenImage('assets/images/avatar-7.png');
+
+  /// File path: assets/images/avatar-8.png
+  AssetGenImage get avatar8 =>
+      const AssetGenImage('assets/images/avatar-8.png');
+
   /// File path: assets/images/instagram.png
   AssetGenImage get instagram =>
       const AssetGenImage('assets/images/instagram.png');
@@ -155,6 +163,8 @@ class $AssetsImagesGen {
         avatar4,
         avatar5,
         avatar6,
+        avatar7,
+        avatar8,
         instagram,
         logo,
         pattern,
