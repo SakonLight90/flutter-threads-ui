@@ -1,16 +1,24 @@
-# threads
+# Threads UI Clone
+Flutter Meta Threads UI clean architecture using Bloc
 
-A new Flutter project.
+## Screenshoot
+<p align="center" width="100%">
+  <img width="18%" src="https://github.com/agisrh/flutter-threads-ui/blob/master/screenshoots/ss-1.png?raw=true" width="250"/>
+  <img width="18%" src="https://github.com/agisrh/flutter-threads-ui/blob/master/screenshoots/ss-2.png?raw=true" width="250"/>
+  <img width="18%" src="https://github.com/agisrh/flutter-threads-ui/blob/master/screenshoots/ss-3.png?raw=true" width="250"/>
+  <img width="18%" src="https://github.com/agisrh/flutter-threads-ui/blob/master/screenshoots/ss-4.png?raw=true" width="250"/>
+  <img width="18%" src="https://github.com/agisrh/flutter-threads-ui/blob/master/screenshoots/ss-5.png?raw=true" width="250"/>
+</p>
 
-## Getting Started
+## Requirements
+- Flutter: 3.7.12
+- Dart SDK: 2.19.6
 
-This project is a starting point for a Flutter application.
+## Installation
+- Add [Flutter](https://flutter.dev/docs/get-started/install 'Flutter') to your machine
+- Open this project folder with Terminal/CMD
+- Ensure there's no cache/build leftover by running `flutter clean` in the Terminal
+- Run in the Terminal `flutter packages get`
+- Run in the Terminal `flutter packages pub run build_runner build --delete-conflicting-outputs`
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For more information, check out the [official documentation](https://flutter.dev/docs 'documentation')
