@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:threads/gen/assets.gen.dart';
+import 'package:threads/ui/screens/home/account_tab.dart';
+import 'package:threads/ui/screens/home/activity_tab.dart';
 import 'package:threads/ui/screens/home/feed_tab.dart';
 import 'package:threads/ui/screens/home/search_tab.dart';
 import 'package:threads/ui/utils/utils.dart';
+import 'package:threads/ui/widgets/widgets.dart';
 
 // ignore: must_be_immutable
 class HomeScreen extends StatelessWidget {
@@ -20,7 +23,13 @@ class HomeScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           physics: NeverScrollableScrollPhysics(),
-          children: [FeedTab(), SearchTab(), FeedTab(), FeedTab(), FeedTab()],
+          children: [
+            FeedTab(),
+            SearchTab(),
+            FeedTab(),
+            ActivityTab(),
+            AccountTab()
+          ],
         ),
       ),
     );
@@ -51,6 +60,17 @@ class _HomeTabBarState extends State<HomeTabBar> {
         labelPadding: EdgeInsets.zero,
         indicatorColor: Colors.transparent,
         controller: tabController,
+        onTap: (index) {
+          if (index == 2) {
+            showModalBottomSheet(
+              context: context,
+              isScrollControlled: true,
+              builder: (context) {
+                return const WriteWidget();
+              },
+            );
+          }
+        },
         tabs: [
           Tab(
             icon: tabController.index == 0

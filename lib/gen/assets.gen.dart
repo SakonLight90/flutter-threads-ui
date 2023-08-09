@@ -45,8 +45,19 @@ class $AssetsIconsGen {
   /// File path: assets/icons/feed.png
   AssetGenImage get feed => const AssetGenImage('assets/icons/feed.png');
 
+  /// File path: assets/icons/globe.png
+  AssetGenImage get globe => const AssetGenImage('assets/icons/globe.png');
+
   /// File path: assets/icons/heart.png
   AssetGenImage get heart => const AssetGenImage('assets/icons/heart.png');
+
+  /// File path: assets/icons/icon-park.png
+  AssetGenImage get iconPark =>
+      const AssetGenImage('assets/icons/icon-park.png');
+
+  /// File path: assets/icons/instagram.png
+  AssetGenImage get instagram =>
+      const AssetGenImage('assets/icons/instagram.png');
 
   /// File path: assets/icons/like-fill.png
   AssetGenImage get likeFill =>
@@ -55,8 +66,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/like.png
   AssetGenImage get like => const AssetGenImage('assets/icons/like.png');
 
+  /// File path: assets/icons/menu.png
+  AssetGenImage get menu => const AssetGenImage('assets/icons/menu.png');
+
   /// File path: assets/icons/message.png
   AssetGenImage get message => const AssetGenImage('assets/icons/message.png');
+
+  /// File path: assets/icons/more.png
+  AssetGenImage get more => const AssetGenImage('assets/icons/more.png');
 
   /// File path: assets/icons/repost.png
   AssetGenImage get repost => const AssetGenImage('assets/icons/repost.png');
@@ -86,10 +103,15 @@ class $AssetsIconsGen {
         explore,
         feedFill,
         feed,
+        globe,
         heart,
+        iconPark,
+        instagram,
         likeFill,
         like,
+        menu,
         message,
+        more,
         repost,
         send,
         threeDots,

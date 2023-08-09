@@ -150,3 +150,132 @@ List<UserModel> findUsers() {
     ),
   ];
 }
+
+List<ActivityModel> activity() {
+  return [
+    ActivityModel(
+      username: "iamnalimov",
+      profile: Assets.images.avatar1.path,
+      type: "following",
+      timeAgo: "12s",
+    ),
+    ActivityModel(
+      username: "lily.rose",
+      profile: Assets.images.avatar2.path,
+      type: "follow_request",
+      timeAgo: "1m",
+    ),
+    ActivityModel(
+      username: "gamer-clan_boys",
+      profile: Assets.images.avatar3.path,
+      type: "following",
+      timeAgo: "1m",
+      isFollowing: true,
+    ),
+    ActivityModel(
+      username: "beautyguru",
+      profile: Assets.images.avatar4.path,
+      type: "following",
+      timeAgo: "15m",
+    ),
+    ActivityModel(
+      username: "ethan.wright",
+      profile: Assets.images.avatar5.path,
+      type: "following",
+      timeAgo: "1h",
+    ),
+    ActivityModel(
+      username: "d.gr8_designer",
+      profile: Assets.images.avatar6.path,
+      type: "following",
+      timeAgo: "1d",
+    ),
+    ActivityModel(
+      username: "dream_soul.world",
+      profile: Assets.images.avatar7.path,
+      type: "following",
+      timeAgo: "1w",
+    ),
+  ];
+}
+
+List<FeedModel> threads() {
+  return [
+    FeedModel(
+      name: "agis",
+      isVerified: true,
+      profile: Assets.images.profileAgis.path,
+      contentText:
+          "Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes.",
+      timeAgo: "33m",
+      likes: "17.2K",
+      replies: "3,339",
+      isFollow: true,
+      userLikes: [
+        UserLikes(photo: Assets.images.avatar1.path),
+        UserLikes(photo: Assets.images.avatar2.path),
+      ],
+    ),
+    FeedModel(
+      name: "agis",
+      isVerified: true,
+      profile: Assets.images.profileAgis.path,
+      contentText:
+          "Here’s this is figma's implementation of UI threads using Flutter and BLoC state management 🚀",
+      timeAgo: "1h",
+      likes: "6K",
+      replies: "231",
+      isFollow: true,
+      userLikes: [
+        UserLikes(photo: Assets.images.avatar4.path),
+        UserLikes(photo: Assets.images.avatar5.path),
+      ],
+    ),
+    FeedModel(
+      name: "agis",
+      isVerified: true,
+      profile: Assets.images.profileAgis.path,
+      contentText:
+          "I love the idea of turning setbacks into opportunities for growth. It's all about the mindset! 💪",
+      timeAgo: "26m",
+      likes: "54",
+      replies: "2",
+      isFollow: true,
+      contentPhoto: Assets.images.postImage.path,
+      userLikes: [
+        UserLikes(photo: Assets.images.avatar3.path),
+        UserLikes(photo: Assets.images.avatar1.path),
+      ],
+    ),
+    FeedModel(
+      name: "agis",
+      isVerified: true,
+      profile: Assets.images.profileAgis.path,
+      contentText:
+          "Let's talk about the incredible power of perseverance and how it can change your life. ",
+      timeAgo: "2h",
+      likes: "135",
+      replies: "12",
+      isFollow: true,
+      userLikes: [
+        UserLikes(photo: Assets.images.avatar1.path),
+        UserLikes(photo: Assets.images.avatar3.path),
+      ],
+    ),
+    FeedModel(
+      name: "agis",
+      isVerified: true,
+      profile: Assets.images.profileAgis.path,
+      contentText:
+          "Couldn't agree more! Failure is just a stepping stone on the path to success. Thanks for the motivation! 🔥",
+      timeAgo: "19m",
+      likes: "143",
+      replies: "24",
+      isFollow: true,
+      userLikes: [
+        UserLikes(photo: Assets.images.avatar6.path),
+        UserLikes(photo: Assets.images.avatar2.path),
+      ],
+    )
+  ];
+}
