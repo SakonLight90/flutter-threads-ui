@@ -22,3 +22,5 @@ Flutter Meta Threads UI clean architecture using Bloc
 - Run in the Terminal `flutter packages pub run build_runner build --delete-conflicting-outputs`
 
 For more information, check out the [official documentation](https://flutter.dev/docs 'documentation')
+
+### Awesome design by [Soumya Ranjan Bharati](https://www.figma.com/community/file/1260163861980206293)
